@@ -15,9 +15,10 @@ export default function App() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const dataRes = await fetch('http://localhost:8000/api/wind-data');
-      const metricsRes = await fetch('http://localhost:8000/api/metrics');
-      
+      const API_BASE = import.meta.env.VITE_API_URL || 'https://wind-procurement-pilot-2026.onrender.com';
+
+        const dataRes = await fetch(`${API_BASE}/api/wind-data`);
+        const metricsRes = await fetch(`${API_BASE}/api/metrics`);
       if (!dataRes.ok || !metricsRes.ok) {
         throw new Error('Failed to connect to backend endpoints');
       }
