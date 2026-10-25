@@ -7,8 +7,9 @@ An enterprise-grade full-stack data intelligence and procurement decision-suppor
 ## 🚀 Live Demo
 * **Frontend (Vercel):**
 * [https://wind-procurement-pilot-2026-drab.vercel.app](https://wind-procurement-pilot-2026-drab.vercel.app)
-* **Backend API (Render):** [https://wind-procurement-pilot-2026.onrender.com/docs](https://wind-procurement-pilot-2026.onrender.com/docs)[cite: 3, 5]
-* 
+* **Backend API (Render):**
+* [https://wind-procurement-pilot-2026.onrender.com/docs](https://wind-procurement-pilot-2026.onrender.com/docs)[cite: 3, 5]
+  
 ## 🚀 Key Features
 
 * **Advanced Error Analytics**: Computes real-time statistical metrics including Mean Absolute Error (MAE), Root Mean Square Error (RMSE), Normalized MAE (%), and Mean Bias Error (MBE).
@@ -74,7 +75,7 @@ Access the containerized application via http://localhost:3000 (frontend) and ht
 ```
 
 ## 📈 Procurement Decision Support & Metrics
-
+```
 | Metric | Value (Jan 2026 Pilot) | Procurement Impact |
 | :--- | :--- | :--- |
 | **Mean Absolute Error (MAE)** | 4,316.33 MW | Defines base capacity buffer required for unhedged imbalances. |
