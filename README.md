@@ -5,8 +5,8 @@ An enterprise-grade full-stack data intelligence and procurement decision-suppor
 
 ---
 ## 🚀 Live Demo
-* **Frontend (Vercel):
-* ** [https://wind-procurement-pilot-2026-drab.vercel.app](https://wind-procurement-pilot-2026-drab.vercel.app)
+* **Frontend (Vercel):**
+* [https://wind-procurement-pilot-2026-drab.vercel.app](https://wind-procurement-pilot-2026-drab.vercel.app)
 * **Backend API (Render):** [https://wind-procurement-pilot-2026.onrender.com/docs](https://wind-procurement-pilot-2026.onrender.com/docs)[cite: 3, 5]
 * 
 ## 🚀 Key Features
@@ -49,25 +49,27 @@ python -m pip install --upgrade pip setuptools wheel
 pip install --only-binary :all: numpy pandas fastapi uvicorn requests
 uvicorn app.main:app --reload --port 8000
 ```
-* **Backend API will : http://localhost:8000
-* **Interactive API Docs (Swagger): http://localhost:8000/docs3. 
+* **Backend API** : http://localhost:8000
+* **Interactive API Docs (Swagger)**: http://localhost:8000/docs3. 
 
 
 ### 3. Run the Frontend
-Open a second terminal window:Bashcd frontend
-```
+Open a second terminal window:
+```bash
+cd frontend
 npm install
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm run dev
 ```
-* **Frontend development server will be available at: http://localhost:5173🐳 
+* Frontend development server will be available at: http://localhost:5173
 
 
 ### Running with Docker
 To spin up both the FastAPI backend and Nginx-served React frontend in isolated containers, run:
 ```
 docker-compose up --build
+```
 Access the containerized application via http://localhost:3000 (frontend) and http://localhost:8000 (backend API).
 ```
 
